@@ -7,5 +7,6 @@ $dominio = <STDIN>;
 ##jugando con array
 @array = ($nombre, "\@", $dominio);
 ## print @array;  ## print several things
-
-print "$nombre", undef ,"\@", "$dominio";
+$caracter = "\@";
+$salida = "${nombre}${caracter}${dominio}";
+print "$salida\n";
