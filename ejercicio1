@@ -1,0 +1,7 @@
+require 5.004;
+print "Ingresar el nombre del usuario";
+$nombre = <STDIN>;
+print "Ahora, ingresar el dominio de su cuenta";
+$dominio = <STDIN>;
+print "$nombre";
+print "$dominio";
