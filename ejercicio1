@@ -2,11 +2,13 @@
 require 5.004;
 print "Ingresar el nombre del usuario: ";
 $nombre = <STDIN>;
+chomp($nombre);
 print "Ahora, ingresar el dominio de su cuenta: ";
 $dominio = <STDIN>;
+chomp($dominio);
 ##jugando con array
 @array = ($nombre, "\@", $dominio);
 ## print @array;  ## print several things
 $caracter = "\@";
 $salida = "${nombre}${caracter}${dominio}";
-print "$salida\n";
+print "$salida";
