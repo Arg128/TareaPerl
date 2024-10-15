@@ -1,3 +1,4 @@
+#!/usr/bin/perl -w
 require 5.004;
 print "Ingresar el nombre del usuario: ";
 $nombre = <STDIN>;
@@ -5,6 +6,6 @@ print "Ahora, ingresar el dominio de su cuenta: ";
 $dominio = <STDIN>;
 ##jugando con array
 @array = ($nombre, "\@", $dominio);
+## print @array;  ## print several things
 
-print "Dominio:", "$nombre","\@","$dominio";
-  
+print "$nombre", undef ,"\@", "$dominio";
